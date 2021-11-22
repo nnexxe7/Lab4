@@ -41,8 +41,6 @@ namespace Lab4
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Label2 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -77,7 +75,6 @@ namespace Lab4
             // 
             // listBox1
             // 
-            resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
             resources.GetString("listBox1.Items"),
@@ -110,6 +107,7 @@ namespace Lab4
             resources.GetString("listBox1.Items27"),
             resources.GetString("listBox1.Items28"),
             resources.GetString("listBox1.Items29")});
+            resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -136,7 +134,6 @@ namespace Lab4
             // 
             // listBox2
             // 
-            resources.ApplyResources(this.listBox2, "listBox2");
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Items.AddRange(new object[] {
             resources.GetString("listBox2.Items"),
@@ -168,12 +165,12 @@ namespace Lab4
             resources.GetString("listBox2.Items26"),
             resources.GetString("listBox2.Items27"),
             resources.GetString("listBox2.Items28")});
+            resources.ApplyResources(this.listBox2, "listBox2");
             this.listBox2.Name = "listBox2";
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // listBox3
             // 
-            resources.ApplyResources(this.listBox3, "listBox3");
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Items.AddRange(new object[] {
             resources.GetString("listBox3.Items"),
@@ -205,6 +202,7 @@ namespace Lab4
             resources.GetString("listBox3.Items26"),
             resources.GetString("listBox3.Items27"),
             resources.GetString("listBox3.Items28")});
+            resources.ApplyResources(this.listBox3, "listBox3");
             this.listBox3.Name = "listBox3";
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -214,21 +212,6 @@ namespace Lab4
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // comboBox1
-            // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // Label2
-            // 
-            resources.ApplyResources(this.Label2, "Label2");
-            this.Label2.Name = "Label2";
             // 
             // button7
             // 
@@ -266,8 +249,6 @@ namespace Lab4
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.Label2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
@@ -299,8 +280,6 @@ namespace Lab4
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button9;

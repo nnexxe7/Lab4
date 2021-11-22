@@ -11,43 +11,48 @@ using System.Windows.Forms;
 
 namespace Lab4
 {
+
     public partial class Form1 : Form
     {
+        Dictionary<string, string> myDict =
+        new Dictionary<string, string>();
+
+
+
         public Form1()
         {
             InitializeComponent();
-            Dictionary<string, string> myDict =
-            new Dictionary<string, string>();
-
-            myDict.Add("Pies", "Dog");
-
+            myDict.Add("Pies", "Dog"); //1
             myDict.Add("Kot", "Cat");
-
             myDict.Add("Swinia", "Pig");
-
             myDict.Add("Chomik", "Hamster");
-
-            myDict.Add("Ptak", "Bird");
-
+            myDict.Add("Ptak", "Bird"); //5
             myDict.Add("Mysz", "Mouse");
-
             myDict.Add("Pszczola", "Bee");
-
             myDict.Add("Niedzwiedz", "Bear");
-
             myDict.Add("Krowa", "Cow");
-
-            myDict.Add("Kurczak", "Chicken");
-
+            myDict.Add("Kurczak", "Chicken"); //10
             myDict.Add("Kaczka", "Duck");
-
             myDict.Add("Slon", "Elephant");
-
             myDict.Add("Ryba", "Fish");
-
             myDict.Add("Zaba", "Frog");
+            myDict.Add("Lew", "Lion"); //15
+            myDict.Add("Dog", "Pies");
+            myDict.Add("Cat", "Kot");
+            myDict.Add("Pig", "Swinia");
+            myDict.Add("Hamster", "Chomik");
+            myDict.Add("Bird", "Ptak"); //20
+            myDict.Add("Mouse", "Mysz");
+            myDict.Add("Bee", "Pszczola");
+            myDict.Add("Bear", "Niedzwiedz");
+            myDict.Add("Cow", "Krowa");
+            myDict.Add("Chicken", "Kurczak"); //25
+            myDict.Add("Duck", "Kaczka");
+            myDict.Add("Elephant", "Slon");
+            myDict.Add("Fish", "Ryba");
+            myDict.Add("Frog", "Zaba");
+            myDict.Add("Lion", "Lew"); //30
 
-            myDict.Add("Lew", "Lion");
 
         }
 
@@ -105,97 +110,13 @@ namespace Lab4
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (comboBox1.SelectedIndex)
-            {
-                case 0:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pl");
-                    break;
-                case 1:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-                    break;
-            }
-
-            this.Controls.Clear();
-            InitializeComponent();
-
-            Dictionary<string, string> myDict =
-            new Dictionary<string, string>();
-
-            myDict.Add("Pies", "Dog");
-
-            myDict.Add("Kot", "Cat");
-
-            myDict.Add("Swinia", "Pig");
-
-            myDict.Add("Chomik", "Hamster");
-
-            myDict.Add("Ptak", "Bird");
-
-            myDict.Add("Mysz", "Mouse");
-
-            myDict.Add("Pszczola", "Bee");
-
-            myDict.Add("Niedzwiedz", "Bear");
-
-            myDict.Add("Krowa", "Cow");
-
-            myDict.Add("Kurczak", "Chicken");
-
-            myDict.Add("Kaczka", "Duck");
-
-            myDict.Add("Slon", "Elephant");
-
-            myDict.Add("Ryba", "Fish");
-
-            myDict.Add("Zaba", "Frog");
-
-            myDict.Add("Lew", "Lion");
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Dictionary<string, string> myDict =
-            new Dictionary<string, string>();
-
-
-            myDict.Add("Dog", "Pies");
-
-            myDict.Add("Cat", "Kot");
-
-            myDict.Add("Pig", "Swinia");
-
-            myDict.Add("Hamster", "Chomik");
-
-            myDict.Add("Bird", "Ptak");
-
-            myDict.Add("Mouse", "Mysz");
-
-            myDict.Add("Bee", "Pszczola");
-
-            myDict.Add("Bear", "Niedzwiedz");
-
-            myDict.Add("Cow", "Krowa");
-
-            myDict.Add("Chicken", "Kurczak");
-
-            myDict.Add("Duck", "Kaczka");
-
-            myDict.Add("Elephant", "Slon");
-
-            myDict.Add("Fish", "Ryba");
-
-            myDict.Add("Frog", "Zaba");
-
-            myDict.Add("Lion", "Lew");
-
             if (textBox2.Text == myDict[textBox1.Text])
             {
                 MessageBox.Show("Dobrze");
                 var rnd = new Random();
-                int randomValue = rnd.Next(1, 15);
+                int randomValue = rnd.Next(15, 30);
                 string b = myDict.Values.ElementAt(randomValue);
                 textBox2.Text = b;
                 textBox1.Text = "";
@@ -204,40 +125,6 @@ namespace Lab4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Dictionary<string, string> myDict =
-            new Dictionary<string, string>();
-
-            myDict.Add("Pies", "Dog");
-
-            myDict.Add("Kot", "Cat");
-
-            myDict.Add("Swinia", "Pig");
-
-            myDict.Add("Chomik", "Hamster");
-
-            myDict.Add("Ptak", "Bird");
-
-            myDict.Add("Mysz", "Mouse");
-
-            myDict.Add("Pszczola", "Bee");
-
-            myDict.Add("Niedzwiedz", "Bear");
-
-            myDict.Add("Krowa", "Cow");
-
-            myDict.Add("Kurczak", "Chicken");
-
-            myDict.Add("Kaczka", "Duck");
-
-            myDict.Add("Slon", "Elephant");
-
-            myDict.Add("Ryba", "Fish");
-
-            myDict.Add("Zaba", "Frog");
-
-            myDict.Add("Lew", "Lion");
-
-
             if (textBox2.Text == myDict[textBox1.Text])
             {
                 MessageBox.Show("Dobrze");
@@ -252,54 +139,6 @@ namespace Lab4
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Dictionary<string, string> myDict =
-            new Dictionary<string, string>();
-
-            myDict.Add("Pies", "Dog");
-            myDict.Add("Dog", "Pies");
-
-            myDict.Add("Kot", "Cat");
-            myDict.Add("Cat", "Kot");
-
-            myDict.Add("Swinia", "Pig");
-            myDict.Add("Pig", "Swinia");
-
-            myDict.Add("Chomik", "Hamster");
-            myDict.Add("Hamster", "Chomik");
-
-            myDict.Add("Ptak", "Bird");
-            myDict.Add("Bird", "Ptak");
-
-            myDict.Add("Mysz", "Mouse");
-            myDict.Add("Mouse", "Mysz");
-
-            myDict.Add("Pszczola", "Bee");
-            myDict.Add("Bee", "Pszczola");
-
-            myDict.Add("Niedzwiedz", "Bear");
-            myDict.Add("Bear", "Niedzwiedz");
-
-            myDict.Add("Krowa", "Cow");
-            myDict.Add("Cow", "Krowa");
-
-            myDict.Add("Kurczak", "Chicken");
-            myDict.Add("Chicken", "Kurczak");
-
-            myDict.Add("Kaczka", "Duck");
-            myDict.Add("Duck", "Kaczka");
-
-            myDict.Add("Slon", "Elephant");
-            myDict.Add("Elephant", "Slon");
-
-            myDict.Add("Ryba", "Fish");
-            myDict.Add("Fish", "Ryba");
-
-            myDict.Add("Zaba", "Frog");
-            myDict.Add("Frog", "Zaba");
-
-            myDict.Add("Lew", "Lion");
-            myDict.Add("Lion", "Lew");
-
             if (textBox2.Text == myDict[textBox1.Text])
             {
                 MessageBox.Show("Dobrze");
@@ -309,8 +148,6 @@ namespace Lab4
                 textBox2.Text = a;
                 textBox1.Text = "";
             }
-
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
