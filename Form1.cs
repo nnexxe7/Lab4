@@ -19,6 +19,7 @@ namespace Lab4
 
 
 
+
         public Form1()
         {
             InitializeComponent();
@@ -52,6 +53,29 @@ namespace Lab4
             myDict.Add("Fish", "Ryba");
             myDict.Add("Frog", "Zaba");
             myDict.Add("Lion", "Lew"); //30
+
+            //angielsko polskie
+            for (int i = 0; i < 15; i++)
+            {
+                string a = myDict.Values.ElementAt(i);
+                string b = myDict.Keys.ElementAt(i);
+                listBox3.Items.Add(a+" - "+b);
+            }
+            //polsko angielskie
+            for (int i = 0; i < 15; i++)
+            {
+                string a = myDict.Values.ElementAt(i);
+                string b = myDict.Keys.ElementAt(i);
+                listBox2.Items.Add(b + " - " + a);
+            }
+            //wszystkie tlumaczenia
+            for (int i = 0; i < 15; i++)
+            {
+                string a = myDict.Values.ElementAt(i);
+                string b = myDict.Keys.ElementAt(i);
+                listBox1.Items.Add(b + " - " + a);
+                listBox1.Items.Add(a + " - " + b);
+            }
 
 
         }

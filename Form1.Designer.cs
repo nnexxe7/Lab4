@@ -76,37 +76,6 @@ namespace Lab4
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            resources.GetString("listBox1.Items"),
-            resources.GetString("listBox1.Items1"),
-            resources.GetString("listBox1.Items2"),
-            resources.GetString("listBox1.Items3"),
-            resources.GetString("listBox1.Items4"),
-            resources.GetString("listBox1.Items5"),
-            resources.GetString("listBox1.Items6"),
-            resources.GetString("listBox1.Items7"),
-            resources.GetString("listBox1.Items8"),
-            resources.GetString("listBox1.Items9"),
-            resources.GetString("listBox1.Items10"),
-            resources.GetString("listBox1.Items11"),
-            resources.GetString("listBox1.Items12"),
-            resources.GetString("listBox1.Items13"),
-            resources.GetString("listBox1.Items14"),
-            resources.GetString("listBox1.Items15"),
-            resources.GetString("listBox1.Items16"),
-            resources.GetString("listBox1.Items17"),
-            resources.GetString("listBox1.Items18"),
-            resources.GetString("listBox1.Items19"),
-            resources.GetString("listBox1.Items20"),
-            resources.GetString("listBox1.Items21"),
-            resources.GetString("listBox1.Items22"),
-            resources.GetString("listBox1.Items23"),
-            resources.GetString("listBox1.Items24"),
-            resources.GetString("listBox1.Items25"),
-            resources.GetString("listBox1.Items26"),
-            resources.GetString("listBox1.Items27"),
-            resources.GetString("listBox1.Items28"),
-            resources.GetString("listBox1.Items29")});
             resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
@@ -135,36 +104,6 @@ namespace Lab4
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
-            resources.GetString("listBox2.Items"),
-            resources.GetString("listBox2.Items1"),
-            resources.GetString("listBox2.Items2"),
-            resources.GetString("listBox2.Items3"),
-            resources.GetString("listBox2.Items4"),
-            resources.GetString("listBox2.Items5"),
-            resources.GetString("listBox2.Items6"),
-            resources.GetString("listBox2.Items7"),
-            resources.GetString("listBox2.Items8"),
-            resources.GetString("listBox2.Items9"),
-            resources.GetString("listBox2.Items10"),
-            resources.GetString("listBox2.Items11"),
-            resources.GetString("listBox2.Items12"),
-            resources.GetString("listBox2.Items13"),
-            resources.GetString("listBox2.Items14"),
-            resources.GetString("listBox2.Items15"),
-            resources.GetString("listBox2.Items16"),
-            resources.GetString("listBox2.Items17"),
-            resources.GetString("listBox2.Items18"),
-            resources.GetString("listBox2.Items19"),
-            resources.GetString("listBox2.Items20"),
-            resources.GetString("listBox2.Items21"),
-            resources.GetString("listBox2.Items22"),
-            resources.GetString("listBox2.Items23"),
-            resources.GetString("listBox2.Items24"),
-            resources.GetString("listBox2.Items25"),
-            resources.GetString("listBox2.Items26"),
-            resources.GetString("listBox2.Items27"),
-            resources.GetString("listBox2.Items28")});
             resources.ApplyResources(this.listBox2, "listBox2");
             this.listBox2.Name = "listBox2";
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
@@ -172,36 +111,6 @@ namespace Lab4
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Items.AddRange(new object[] {
-            resources.GetString("listBox3.Items"),
-            resources.GetString("listBox3.Items1"),
-            resources.GetString("listBox3.Items2"),
-            resources.GetString("listBox3.Items3"),
-            resources.GetString("listBox3.Items4"),
-            resources.GetString("listBox3.Items5"),
-            resources.GetString("listBox3.Items6"),
-            resources.GetString("listBox3.Items7"),
-            resources.GetString("listBox3.Items8"),
-            resources.GetString("listBox3.Items9"),
-            resources.GetString("listBox3.Items10"),
-            resources.GetString("listBox3.Items11"),
-            resources.GetString("listBox3.Items12"),
-            resources.GetString("listBox3.Items13"),
-            resources.GetString("listBox3.Items14"),
-            resources.GetString("listBox3.Items15"),
-            resources.GetString("listBox3.Items16"),
-            resources.GetString("listBox3.Items17"),
-            resources.GetString("listBox3.Items18"),
-            resources.GetString("listBox3.Items19"),
-            resources.GetString("listBox3.Items20"),
-            resources.GetString("listBox3.Items21"),
-            resources.GetString("listBox3.Items22"),
-            resources.GetString("listBox3.Items23"),
-            resources.GetString("listBox3.Items24"),
-            resources.GetString("listBox3.Items25"),
-            resources.GetString("listBox3.Items26"),
-            resources.GetString("listBox3.Items27"),
-            resources.GetString("listBox3.Items28")});
             resources.ApplyResources(this.listBox3, "listBox3");
             this.listBox3.Name = "listBox3";
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
