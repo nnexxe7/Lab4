@@ -59,7 +59,7 @@ namespace Lab4
             {
                 string a = myDict.Values.ElementAt(i);
                 string b = myDict.Keys.ElementAt(i);
-                listBox3.Items.Add(a+" - "+b);
+                listBox3.Items.Add(a+ " -  "+b);
             }
             //polsko angielskie
             for (int i = 0; i < 15; i++)
